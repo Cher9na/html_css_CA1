@@ -1,0 +1,227 @@
+:root {
+  /*colors*/
+  --clr-primary: rgb(87, 87, 92);
+  --clr-secondary: brown;
+  --clr-accent: rgb(0, 0, 0);
+  --clr-warn: rgb(255, 0, 0);
+  --clr-danger: rgb(255, 0, 0);
+  --clr-success: rgb(0, 0, 0);
+  --clr-info: rgb(0, 0, 0);
+  --clr-bg-dark: #3f3e3e;
+  --clr-bg-light: #f5f5f5;
+  --clr-bg-lighter: #eeeeee;
+  --clr-bg-grey: #938282;
+}
+html {
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--clr-bg-grey);
+  font-family: montserrat;
+}
+header {
+  /*position: fixed;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*width: 100vw;*/
+  margin-bottom: 2rem;
+  color: #8b4b8b;
+  background-color: #824545;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #0d1110;
+  font-size: 3rem;
+  font-weight: bold;
+}
+p {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #0d110c;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #bdb085; */
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #824545;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*chechout*/
+.checkouts-container {
+  display: flex;
+  flex-direction: column;
+  border: solid, green, 2px;
+}
+.checkout-container {
+  width: 500;
+  border: solid, blue, 20px;
+  margin: 1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 500px;
+}
+/*index + product html*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid, red, 2px;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid, green, 2px;
+}
+.product-container {
+  width: 500;
+  border: solid, blue, 20px;
+  margin: 1rem;
+}
+.product-container img {
+  width: 60vw;
+  max-width: 600px;
+  min-width: 300px;
+}
+.category-container {
+  display: flex;
+  flex-direction: column;
+}
+.category {
+  margin: 10px;
+  background-color: #4d9078;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.category.sale {
+  background-color: red;
+}
+.category h2,
+.category p {
+  color: white;
+}
+/*menu.html*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+li,
+a,
+button,
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4d9078;
+  text-decoration: none;
+}
+#click {
+  display: none;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover,
+.active {
+  color: #0088a9;
+}
+button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+.menu-btn {
+  color: white;
+  display: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+@media (max-width: 1250px) {
+  .nav__links {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #24252a;
+    height: 50vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .cta {
+    display: inline-flex;
+    position: fixed;
+    bottom: 80px;
+    width: 100vw;
+    left: -100;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  #click:not(:checked) ~ .nav__links {
+    left: -100%;
+  }
+  #click:not(:checked) ~ .cta {
+    left: -100%;
+  }
+  #click:checked ~ .nav__links {
+    left: 0%;
+  }
+  #click:checked ~ .cta {
+    left: 0%;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .nav__links li {
+    display: block;
+    margin-top: 40px;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
+}
