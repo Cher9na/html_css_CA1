@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Cart</title>
+    <title>rainydays</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Josefin+Sans:wght@300;400&family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/bf3b3c7d1f.js"
@@ -22,70 +24,70 @@
         <h1>Rainydays</h1>
         <p>Pushing the comfort zone</p>
       </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <ul class="nav__links">
-        <li><a class="active" href="/">Main</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="sale.html">Sale</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+      <div class="container-col">
+        <nav>
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav__links">
+            <li><a class="active" href="/">Main</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="wrapper">
+    <main>
       <h2>Shopping cart</h2>
-      <div class="shops-container">
-        <div class="shop-container">
-          <div class="box">
-            <img src="/images/Wbreaker.webp" alt="Gore-tex jacket" />
-            <div class="content">
-              <h3>Gore-tex Jacket</h3>
-              <h4>Price: $50</h4>
-              <p class="unit">Quantity: <input value="1" /></p>
-              <p class="btn-area">
-                <i class="fa fa-trash"></i>
-                <span class="btn2">Remove</span>
-              </p>
-            </div>
-          </div>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+        <tr>
+          <td><img src="images/Wbreaker.webp" /></td>
+          <td>Gore-tex Jacket</td>
+          <td>M</td>
+          <td>1</td>
+          <td>$50</td>
+          <td><i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+      </table>
+
+      <div class="total-container">
+        <div class="total">
+          <h3>Subtotal: $50</h3>
+          <h4>Shipping: $10</h4>
+          <h4>Total: $60</h4>
+          <a href="payment.html"
+            ><input type="submit" value="Continue to checkout" class="btn"
+          /></a>
         </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="shop-container">
-        <p><span>Subtotal</span> <span>$50</span></p>
-        <hr />
-        <p><span>Shipping</span> <span>$5</span></p>
-        <hr />
-        <p><span>Total</span> <span>$55</span></p>
-
-        <a href="checkout.html"><i class="fa fa-shopping-cart"></i>Cheakout</a>
-      </div>
-    </div>
+    </main>
     <footer>
-      <a href="about.html" alt="about">About</a>
-      <a href="contakt.html" alt="contack">Contact</a>
-      <div class="newfooter">
-        <div class="socialmedia">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-twitter"></i>
+      <footer>
+        <div class="footer-container">
+          <a href="about.html" alt="about">About</a>
+          <a href="contakt.html" alt="contack">Contact</a>
         </div>
-      </div>
-      <div class="try">
-        <p class="copyright">Copyright&copy.</p>
-      </div>
-    </footer>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
+        <div class="footer-container">
+          <i class="fa-brands fa-facebook" style="color: rgb(18, 18, 231)"></i>
+          <i class="fa-brands fa-instagram" id="insta"></i>
+          <i class="fa-brands fa-linkedin" style="color: navy"></i>
+          <i class="fa-brands fa-twitter" style="color: rgb(20, 168, 218)"></i>
+        </div>
+        <div class="footer-container">
+          <p class="copyright">Copyright&copy.</p>
+        </div>
+      </footer>
     <script src="" async defer></script>
   </body>
 </html>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>rainydays</title>
+    <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Josefin+Sans:wght@300;400&family=Manrope:wght@400;700&display=swap"
       rel="stylesheet"
@@ -41,49 +43,19 @@
       </div>
     </header>
     <main>
-      <h2>Contact us</h2>
-      <p>
-        Do you have any questions? Please do not hesitate to contact us
-        directly. Our team will come back to you within a matter of hours to
-        help you.
-      </p>
-      <section>
-        <form>
-          <div class="form-container">
-            <label for="fname">First name</label>
-            <input type="text" id="firstname" placeholder="Your name" />
-          </div>
-          <div class="form-container">
-            <label for="lname">Last name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Your last name"
-            />
-          </div>
-          <div class="form-container">
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-          </div>
-          <div class="form-container">
-            <label for="subject">Subject</label>
-            <textarea
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 200px"
-            ></textarea>
-          </div>
-          <a href=""><button class="btn btn-primary">Submit</button></a>
-        </form>
-      </section>
+      <div class="container-col">
+        <i class="fa-solid fa-circle-check" style="color: green;padding: 5rem;font-size: 200px;"></i>
+        <section>
+          <h1>Thank you for your purchase!</h1>
+          <p>
+            Thank you for your purchase! We will send you a confirmation email
+            shortly.
+          </p>
+          <p>Have a great day!</p>
+          <a href="index.html"><button class="btn btn-primary">Back to main</button></a>
+        </section>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
@@ -100,6 +72,13 @@
         <p class="copyright">Copyright&copy.</p>
       </div>
     </footer>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
     <script src="" async defer></script>
   </body>
 </html>

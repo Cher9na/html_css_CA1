@@ -1,47 +1,29 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); Ta bort denne?? Om du vil bruke annen font */
 :root {
   /*colors*/
-  --clr-primary: rgb(87, 87, 92);
-  --clr-secondary: brown;
-  --clr-accent: rgb(0, 0, 0);
-  --clr-warn: rgb(255, 0, 0);
-  --clr-danger: rgb(255, 0, 0);
-  --clr-success: rgb(0, 0, 0);
-  --clr-info: rgb(0, 0, 0);
+  --clr-primary: #f5f5dc; /*representing the snow on the mountain tops*/
+  --clr-secondary: #87ceeb; /*representing the blue sky*/
+  --clr-tertiary: #808080; /*representing the stones*/
+  --clr-alt-1: #add8e6; /*representing the clouds*/
+  --clr-alt-2: #696969; /*representing the mountain*/
+  --clr-black: #000000; /*Just black*/
   --clr-bg-dark: #3f3e3e;
   --clr-bg-light: #f5f5f5;
   --clr-bg-lighter: #eeeeee;
-  --clr-bg-grey: #938282;
+  --clr-cta: #0088a9;
+  --clr-cta-hover: #0088a9;
+  --clr-sale: #f5f5f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-family: "Frank Ruhl Libre", serif;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Manrope", sans-serif;
 }
-body {
-  background-color: var(--clr-bg-grey);
-  font-family: montserrat;
-}
-header {
-  /*position: fixed;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-  /*width: 100vw;*/
-  margin-bottom: 2rem;
-  color: #8b4b8b;
-  background-color: #824545;
-}
-/*.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
-}*/
 h1 {
   font-family: "Frank Ruhl Libre", serif;
   color: #0d1110;
@@ -52,85 +34,69 @@ p {
   font-family: "Frank Ruhl Libre", serif;
   color: #0d110c;
 }
+body {
+  background-color: var(--clr-alt-2);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #8b4b8b;
+  background-color: var(--clr-alt-1);
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #bdb085; */
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  background-color: #824545;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: var(--clr-alt-1);
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
-/*chechout*/
-.checkouts-container {
-  display: flex;
-  flex-direction: column;
-  border: solid, green, 2px;
+.footer-container {
+  display: inline;
+  background-color: var(--clr-alt-1);
+  padding-top: 1rem;
+  font-size: larger;
 }
-.checkout-container {
-  width: 500;
-  border: solid, blue, 20px;
-  margin: 1rem;
+.footer-container:nth-child(-n + 3) * {
+  padding-left: 2rem;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 80vw;
-  max-width: 500px;
-}
-/*index + product html*/
-.wrapper {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid, red, 2px;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
 }
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  border: solid, green, 2px;
-}
-.product-container {
-  width: 500;
-  border: solid, blue, 20px;
-  margin: 1rem;
-}
-.product-container img {
-  width: 60vw;
-  max-width: 600px;
-  min-width: 300px;
-}
-.category-container {
+article {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
 }
-.category {
-  margin: 10px;
-  background-color: #4d9078;
-  padding: 10px;
-  margin-bottom: 40px;
+/* **************Contact*****************************/
+form {
+  display: table;
 }
-.category.sale {
-  background-color: red;
+/*Nav -- Menu*/
+nav {
+  margin: 2rem;
 }
-.category h2,
-.category p {
-  color: white;
-}
-/*menu.html*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 li,
 a,
-button,
-.logo {
+button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -157,118 +123,165 @@ button,
 .active {
   color: #0088a9;
 }
-button {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+/*****card*****/
+.card-body img {
+  width: 50vw;
+  max-width: 200px;
 }
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 15rem;
+}
+
+.price-container-col {
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; */
+  top: 65vh;
+  max-width: 15rem;
+}
+/*********************** form and payment form *************************/
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: right;
+  line-height: 26px;
+}
+label {
+}
+input {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #0088a9;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4d9078;
+}
+.payment-form input {
+  width: 60vw;
+  max-width: 500px;
+}
+.payment-container {
+  display: flex;
+  flex-direction: row;
+}
+.payment-form {
+  margin: 0.5rem;
+}
+.icon-container {
+  font-size: x-large;
+}
+/*****************PRODUCTS**********************/
+table,
+td {
+  width: 400px;
+  background-color: #0088a9;
+  margin-top: 30px;
+}
+th {
+  text-align: center;
+  background-color: white;
+}
+tr * {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+thead tfoot {
+  background-color: #0088a9;
+}
+td img {
+  width: 100px;
+  max-width: 0;
+  min-width: 100px;
+}
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 15rem;
+}
+/*************GENERAL COMPONENTS AND STYLES****************/
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: 100vw;
+  padding: 5rem;
+  background-color: var(--clr-bg-lighter);
+}
+.text-container {
+  margin-right: 2rem;
+  max-width: 40vw;
+}
+.container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.sale {
+  background-color: var(--clr-bg-lighter);
+}
+/*********************IMAGES******************************/
+img {
+  width: 60vw;
+  max-width: 400px;
+  min-width: 300px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+/*********************************BUTTONS*******************************/
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
-.logo {
-  font-size: 18px;
-  font-weight: 600;
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--clr-alt-1);
+  color: var(--clr-alt-2);
+  text-decoration: none;
 }
-.menu-btn {
-  color: white;
-  display: none;
-  cursor: pointer;
-  padding-left: 10px;
+.btn:hover {
+  background-color: var(--clr-secondary);
 }
-@media (max-width: 1250px) {
-  .nav__links {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background-color: #24252a;
-    height: 50vh;
-    width: 100%;
-    display: block;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-  .cta {
-    display: inline-flex;
-    position: fixed;
-    bottom: 80px;
-    width: 100vw;
-    left: -100;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  #click:not(:checked) ~ .nav__links {
-    left: -100%;
-  }
-  #click:not(:checked) ~ .cta {
-    left: -100%;
-  }
-  #click:checked ~ .nav__links {
-    left: 0%;
-  }
-  #click:checked ~ .cta {
-    left: 0%;
-  }
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
-  .nav__links li {
-    display: block;
-    margin-top: 40px;
-  }
-  .menu-btn {
-    display: inline-block;
-  }
+.btn:focus {
+  background-color: var(--clr-secondary);
 }
-/*cart*/
-.shops-container {
-  display: flex;
-  flex-direction: column;
-  border: solid, green, 2px;
+.btn:active {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-.shop-container {
-  width: 500;
-  border: solid, blue, 20px;
-  margin: 1rem;
-}
-.box {
-  display: flex;
-  flex: 25%;
-  margin-left: 20px;
-  padding: 20px;
-  height: 350px;
-  border-radius: 5px;
-  background: #fff;
-  width: 600px;
-  height: 235px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: #fff;
-  transition: all 0.6 ease;
-}
-.box:hover {
-  transform: scale(1.1);
-}
-.content {
-  padding: 20px;
-  position: relative;
-  width: 100%;
-}
-.content h3 {
-  margin-bottom: 30px;
-}
-.content h4 {
-  margin-bottom: 50px;
-}
-.unit input {
-  width: 50px;
-  padding: 8px;
-  text-align: center;
+.btn:disabled {
+  background-color: var(--clr-bg-grey);
+  color: var(--clr-bg-light);
 }
 .btn-area {
   position: absolute;
@@ -286,6 +299,94 @@ button:hover {
 }
 .btn-area i {
   margin-left: 5px;
+}
+/**********************************INDEX.HTML*************************************************/
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: var(--clr-bg-light); /*la til denne for å få teksten hvit*/
+}
+.category-container img {
+  width: 30vw;
+  min-width: 250px;
+}
+/*******************************CHECKOUT.HTML*****************************************************/
+.checkouts-container {
+  display: flex;
+  flex-direction: column;
+  border: solid, green, 2px;
+}
+.checkout-container {
+  width: 500;
+  border: solid, blue, 20px;
+  margin: 1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 500px;
+}
+/*****************************MEN.HTML, WOMEN.HTML, SALE.HTML***********************************************/
+.product-display-container {
+  margin: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+.product-display-text {
+  margin: 10px;
+  padding: 10px;
+}
+/*************************************PRODUCTS.HTML*************************************************/
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid, green, 2px;
+}
+.product-container {
+  width: 500;
+  border: solid, blue, 20px;
+  margin: 1rem;
+}
+.product-container img {
+  width: 60vw;
+  max-width: 600px;
+  min-width: 300px;
+}
+/****************WORK TO BE DONE******************/
+.menu-btn {
+  color: white;
+  display: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+/*.shop-container {
+  display: flex;
+  flex-direction: column;
+  border: solid, green, 2px;
+  width: 500;
+  border: solid, blue, 20px;
+  margin: 1rem;
+}
+.content {
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+.content h3 {
+  margin-bottom: 30px;
+}
+.content h4 {
+  margin-bottom: 50px;
+}
+.unit input {
+  width: 50px;
+  padding: 8px;
+  text-align: center;
 }
 .subtot {
   flex: 50%;
@@ -319,4 +420,68 @@ button:hover {
 }
 .subtot a:hover {
   background-color: #397ca7;
+}*/
+@media (max-width: 800px) {
+  .jumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-container {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .nav__links {
+    position: fixed;
+    top: 150px;
+    /* left: -100%; */
+    background-color: #24252a;
+    /* height: 50vh; */
+    width: 100%;
+    padding-bottom: 2rem;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .cta {
+    display: inline-flex;
+    position: fixed;
+    bottom: 80px;
+    width: 100vw;
+    left: -100;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  #click:not(:checked) ~ .nav__links {
+    left: -100%;
+  }
+  #click:not(:checked) ~ .cta {
+    left: -100%;
+  }
+  #click:checked ~ .nav__links {
+    left: 0%;
+  }
+  #click:checked ~ .cta {
+    left: 0%;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .nav__links li {
+    display: block;
+    margin-top: 20px;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
 }
