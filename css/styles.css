@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); Ta bort denne?? Om du vil bruke annen font */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
 :root {
   /*colors*/
   --clr-primary: #f5f5dc; /*representing the snow on the mountain tops*/
@@ -20,18 +20,19 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Frank Ruhl Libre", serif;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Manrope", sans-serif;
+  font-family: "Open Sans", serif;
+  font-family: "Monteserrant", sans-serif;
+  font-family: "Nunito sans", sans-serif;
 }
-h1 {
-  font-family: "Frank Ruhl Libre", serif;
+h1,
+h3 {
+  font-family: "Open Sans", serif;
   color: #0d1110;
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: bold;
 }
 p {
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Nunito Sans", serif;
   color: #0d110c;
 }
 body {
@@ -72,19 +73,17 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: var(--clr-primary);
   padding: 2rem;
   margin: 2rem;
-  border-radius: 10px;
 }
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: var(--clr-primary);
   padding: 2rem;
   margin: 2rem;
-  border-radius: 10px;
 }
 .contact-container,
 .about-container {
@@ -317,7 +316,7 @@ button:hover {
   padding: 1px;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: var(--clr-bg-light); /*la til denne for å få teksten hvit*/
+  color: var(--clr-bg-light);
 }
 .category-container img {
   width: 30vw;
