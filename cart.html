@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>rainydays</title>
-    <meta name="description" content="" />
+    <title>cart</title>
+    <meta name="description" content="list of all product added to the shopping cart" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,25 +41,28 @@
       </div>
     </header>
     <main>
-      <h2>Shopping cart</h2>
-      <table>
-        <tr>
-          <th>Product</th>
-          <th>Description</th>
-          <th>Size</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Remove</th>
-        </tr>
-        <tr>
-          <td><img src="images/Wbreaker.webp" /></td>
-          <td>Gore-tex Jacket</td>
-          <td>M</td>
-          <td>1</td>
-          <td>$50</td>
-          <td><i class="fa-solid fa-trash-can"></i></td>
-        </tr>
-      </table>
+    <div class="checkout-container">
+      <h2>My Shopping cart</h2>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+          <tr>
+            <td><img src="images/Wbreaker.webp" /></td>
+            <td>Gore-tex Jacket</td>
+            <td>M</td>
+            <td>1</td>
+            <td>$50</td>
+            <td><i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+        </table>
+      </div>
 
       <div class="total-container">
         <div class="total">
@@ -67,10 +70,11 @@
           <h4>Shipping: $10</h4>
           <h4>Total: $60</h4>
           <a href="payment.html"
-            ><input type="submit" value="Continue to checkout" class="btn"
+            ><input type="submit" value="Continue to checkout" class="btn" style="margin-top: 20px;"
           /></a>
         </div>
       </div>
+    </div>  
     </main>
     <footer>
       <footer>
