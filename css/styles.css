@@ -33,7 +33,7 @@ h3 {
 }
 p {
   font-family: "Nunito Sans", serif;
-  color: #0d110c;
+  color: var(--clr-alt-2);
 }
 body {
   background-color: var(--clr-alt-2);
@@ -44,7 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #8b4b8b;
-  background-color: var(--clr-alt-1);
+  background-color: var(--clr-alt-2);
 }
 main {
   display: flex;
@@ -56,13 +56,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-alt-1);
+  background-color: var(--clr-alt-2);
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
 .footer-container {
   display: inline;
-  background-color: var(--clr-alt-1);
+  background-color: var(--clr-alt-2);
   padding-top: 1rem;
   font-size: larger;
 }
@@ -135,7 +135,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #4d9078;
+  color: var(--clr-black);
   text-decoration: none;
 }
 #click {
@@ -156,7 +156,7 @@ button {
 }
 .nav__links li a:hover,
 .active {
-  color: #0088a9;
+  color: var(--clr-primary);
 }
 /*****card*****/
 .card-body img {
