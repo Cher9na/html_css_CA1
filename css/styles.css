@@ -43,7 +43,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #8b4b8b;
+  color: var(--clr-primary);
   background-color: var(--clr-alt-2);
 }
 main {
