@@ -33,7 +33,7 @@ h3 {
 }
 p {
   font-family: "Nunito Sans", serif;
-  color: var(--clr-alt-2);
+  color: var(--clr-black);
 }
 body {
   background-color: var(--clr-alt-2);
@@ -125,13 +125,12 @@ article {
 form {
   display: table;
 }
-/*Nav -- Menu*/
+/***************Nav -- Menu**************************/
 nav {
   margin: 2rem;
 }
 li,
-a,
-button {
+a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 25px;
@@ -195,7 +194,7 @@ input {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   color: #4d9078;
 }
 .payment-form input {
@@ -265,9 +264,10 @@ button:hover {
 }
 .btn {
   display: inline-block;
+
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  background-color: var(--clr-alt-1);
+  background-color: var(--clr-bg-light);
   color: var(--clr-alt-2);
   text-decoration: none;
 }
